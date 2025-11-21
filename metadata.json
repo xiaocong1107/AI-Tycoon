@@ -1,0 +1,5 @@
+{
+  "name": "AI Pixel Town",
+  "description": "A virtual world simulation where AI agents live, move, and socialize autonomously using Gemini 2.5 Flash.",
+  "requestFramePermissions": []
+}
