@@ -169,7 +169,7 @@ const App: React.FC = () => {
       
       setAgents(currentAgents => {
         const nextAgents = currentAgents.map(agent => ({...agent}));
-        const occupiedPositions = new Set(nextAgents.map(a => `${a.position.x},${a.position.y}`));
+        const occupiedPositions = new Set<string>(nextAgents.map(a => `${a.position.x},${a.position.y}`));
 
         nextAgents.forEach(agent => {
           if (agent.status === AgentStatus.TALKING || agent.status === AgentStatus.THINKING) return;
